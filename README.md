@@ -7,3 +7,5 @@ yarn start
 ```bash
 sh build.sh
 ```
+
+![image](https://raw.githubusercontent.com/leuvi/webassembly/main/demo.png)

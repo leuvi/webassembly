@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebAssembly入门</title>
+  <style>
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      text-indent: 1em;
+      font-size: 18px;
+    }
+
+    .row {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h2>DOM操作</h2>
+    <div class="row">
+      <input type="text" id="qsinput">
+      <button id="qs">querySelector</button>
+    </div>
+    <h2>计算</h2>
+    <div class="row">
+      <input type="text" id="add1">+
+      <input type="text" id="add2">
+      <button id="jsadd">jsadd</button>
+      <button id="goadd">goadd</button>
+      <span id="addr"></span>
+    </div>
+    <div class="row">
+      <input type="text" id="fibnum">
+      <button id="fib">Fibonacci</button>
+      <button id="lastfib">LastFibonacci</button>
+      <span id="fibr"></span>
+    </div>
+    <h2>加密</h2>
+    <div class="row">
+      计算MD5值 <input type="file" id="md5">
+      <p id="md5text"></p>
+    </div>
+    <div class="row">
+      AES加密 <input type="text" id="username" placeholder="用户名">
+      <input type="password" id="password" placeholder="密码">
+      <button id="login">提交</button>
+      <button id="base64">base64</button>
+      <button id="aeslogin">aes加密</button>
+      <span id="aesr"></span>
+    </div>
+    <div class="row">
+      AES解密 <input type="text" id="encryptstr">
+      <button id="decrypt">提交</button>
+      <p id="decryptr"></p>
+    </div>
+    <h2>图片处理</h2>
+    <div class="row">
+      预览 <input type="file" id="preview">
+    </div>
+    <div class="row">
+      下载 <input type="file" id="download">
+    </div>
+    <h2>网络请求</h2>
+    <div class="row">
+      <input style="width: 300px;" type="text" id="httpinput" value="https://api.github.com/users/apple">
+      <button id="http">提交</button>
+      <span id="httptime"></span>
+      <p id="httpr"></p>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
